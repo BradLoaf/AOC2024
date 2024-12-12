@@ -16,7 +16,6 @@ for trailhead in trailheads:
         pos = stack.pop()
         height = lines[pos[0]][pos[1]]
         if height == '9' and pos not in visited:
-            print(trailhead, pos)
             score += 1
         else:
             if pos[0] + 1 < len(lines) and int(height) + 1 == int(lines[pos[0] + 1][pos[1]]) and pos not in visited:
